@@ -24,7 +24,7 @@ const Work = () => {
             <Project
                 title="Hotel Alucia"
                 imagePath="/images/hotel alucia work.png"
-                description="A landing page for a luxury hotel in Bali. It showcases several sections of available services ilke restaurants and bars, rooms and suites and other minor facilities, pools, spa, etc."
+                description="A landing page for a luxury hotel in Bali. It showcases several sections of available services like restaurants and bars, rooms and suites and other minor facilities, pools, spa, etc."
                 stack="HTML, CSS, Javascript"
                 websiteLink="https://hotel-alucia.netlify.app"
                 gitRepoLink="https://github.com/shanPhyoe/alucia-hotel"
