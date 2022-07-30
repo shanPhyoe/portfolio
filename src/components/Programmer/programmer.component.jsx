@@ -122,9 +122,7 @@ const MeAndDog = () => {
                 background: 'transparent',
                 height: '40rem',
                 width: '40rem',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
+                position: 'relative',
             }}
             title="Owner of 3D object: Jan Bláha, from Link: https://sketchfab.com/3d-models/programmer-153d901c16494fd8bc5d376c39a1fa44"
         >
