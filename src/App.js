@@ -24,16 +24,16 @@ function App() {
             <Navbar />
             <MenuBox />
             <ToggleTheme />
-            <AnimatePresence exitBeforeEnter>
-                <ScrollToTop>
+            <ScrollToTop>
+                <AnimatePresence exitBeforeEnter>
                     <Routes location={location} key={pathname}>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/work" element={<Work />} />
                     </Routes>
-                </ScrollToTop>
-            </AnimatePresence>
+                </AnimatePresence>
+            </ScrollToTop>
             <Footer />
         </div>
     );
