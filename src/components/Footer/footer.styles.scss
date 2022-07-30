@@ -1,0 +1,12 @@
+.footer {
+    width: 100vw;
+    height: 2rem;
+    text-align: center;
+    color: var(--color-text-alt);
+    font-size: 1.6rem;
+    user-select: none;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    text-shadow: 1px 1px 0px var(--color-secondary);
+}

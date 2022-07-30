@@ -1,0 +1,121 @@
+:root {
+    --font-family-heading: 'M PLUS 1', sans-serif;
+    --font-family-body: 'Lora', serif;
+
+    --slideshow-: ;
+}
+
+body[data-theme='dark'] {
+    --color-header: #fff;
+    --color-text: #cdcdd1;
+    --color-text-alt: #757579;
+
+    --color-primary: #00c6c2;
+    --color-primary-dark: #509d9a;
+    --color-primary-dark-rgb: 80, 157, 154;
+    --color-primary-maxdark: #006d7e;
+
+    --color-secondary: #202020;
+
+    --color-tertiary: #f9f871;
+    --color-tertiary-light: #fbfb9d;
+}
+
+body[data-theme='light'] {
+    --color-header: #000;
+    --color-text: #101010;
+    --color-text-alt: #ababab;
+
+    --color-primary: #00a38d;
+    --color-primary-dark: #00c9b2;
+    --color-primary-dark-rgb: 0, 201, 178;
+    --color-primary-maxdark: #006658;
+
+    --color-secondary: #f8f9f0;
+
+    --color-tertiary: #2f4858;
+    --color-tertiary-light: #406277;
+}
+
+html {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    background: var(--color-secondary);
+    font-family: var(--font-family-body);
+    color: var(--color-text);
+    line-height: 1.7;
+    transition: background 0.3s;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+a {
+    cursor: pointer;
+}
+
+a,
+a:visited,
+a:link {
+    color: inherit;
+    font-family: var(--font-family-heading);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-family-heading);
+    color: var(--color-header);
+}
+
+h1 {
+    font-size: 4.8rem;
+    font-weight: 800;
+
+    @media (max-width: 520px) {
+        font-size: 3.8rem;
+    }
+
+    @media (max-width: 390px) {
+        font-size: 3rem;
+    }
+}
+
+h2 {
+    font-size: 3.3rem;
+    font-weight: 800;
+
+    @media (max-width: 520px) {
+        font-size: 2.6rem;
+    }
+
+    @media (max-width: 390px) {
+        font-size: 2.4rem;
+    }
+}
+
+h3 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    border-bottom: 3px solid var(--color-text-alt);
+    transition: border-color 0.3s;
+    width: fit-content;
+    margin-bottom: 2rem;
+    user-select: none;
+
+    &:hover {
+        border-color: var(--color-primary);
+    }
+}

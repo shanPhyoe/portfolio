@@ -1,0 +1,101 @@
+.home {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    &__slideshow {
+        position: absolute;
+        right: 8%;
+        top: 0;
+
+        @media (max-width: 1070px) {
+            right: 3rem;
+        }
+
+        @media (max-width: 520px) {
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+
+    &__header-textbox {
+        line-height: 1.3;
+        position: absolute;
+        left: 15%;
+        top: 20%;
+        user-select: none;
+
+        @media (max-width: 1280px) {
+            left: 10%;
+        }
+
+        @media (max-width: 1070px) {
+            left: 5rem;
+        }
+
+        @media (max-width: 900px) {
+            & > span {
+                text-shadow: 1px 0 0px var(--color-secondary);
+            }
+
+            & > h1,
+            & > h2 {
+                text-shadow: 2px 2px 2px var(--color-secondary);
+            }
+        }
+
+        @media (max-width: 520px) {
+            left: 4rem;
+        }
+
+        @media (max-width: 420px) {
+            left: 2rem;
+        }
+
+        & > span {
+            font-size: 1.8rem;
+            color: var(--color-primary);
+        }
+    }
+
+    &__skills {
+        position: absolute;
+        left: 18%;
+        top: 45%;
+
+        @media (max-width: 1280px) {
+            left: 15%;
+        }
+
+        @media (max-width: 1070px) {
+            left: 10rem;
+        }
+
+        @media (max-width: 520px) {
+            width: 30rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__skills-content {
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        column-gap: 8rem;
+        row-gap: 1.2rem;
+        height: 25.2rem;
+
+        @media (max-width: 420px) {
+            column-gap: 5rem;
+            row-gap: 0.7rem;
+        }
+    }
+}

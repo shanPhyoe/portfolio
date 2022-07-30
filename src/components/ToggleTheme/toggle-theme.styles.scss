@@ -1,0 +1,41 @@
+.toggle-theme {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 4rem;
+    z-index: 1000;
+
+    @media (max-width: 720px) {
+        right: 10rem;
+    }
+
+    @media (max-width: 420px) {
+        right: 7rem;
+    }
+
+    &--dark {
+        background: var(--color-tertiary);
+
+        &:hover {
+            background: var(--color-tertiary-light);
+        }
+    }
+    &--light {
+        background: var(--color-tertiary);
+
+        &:hover {
+            background: var(--color-tertiary-light);
+        }
+    }
+
+    &__icon {
+        width: 2rem;
+        height: 2rem;
+    }
+}

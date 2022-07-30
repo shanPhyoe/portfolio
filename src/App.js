@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+
+import Footer from './components/Footer/footer.component';
+import Navbar from './components/Navbar/navbar.component';
+import MenuBox from './components/MenuBox/menu-box.component';
+import ToggleTheme from './components/ToggleTheme/toggle-theme.component';
+
+import Home from './pages/home/home.component';
+import About from './pages/about/about.component';
+import Contact from './pages/contact/contact.component';
+import Work from './pages/work/work.component';
+
+import './App.scss';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const location = useLocation();
+
+    return (
+        <div className="App">
+            <Navbar />
+            <MenuBox />
+            <ToggleTheme />
+            <AnimatePresence exitBeforeEnter>
+                <Routes location={location} key={location.pathname}>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
+                    <Route path="/work" element={<Work />} />
+                </Routes>
+            </AnimatePresence>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
