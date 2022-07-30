@@ -14,10 +14,10 @@ const MenuBox = () => {
     useClickAway(ref, () => setLinksShown(false));
 
     return (
-        <div className="menubox">
+        <div className="menubox" ref={ref}>
             <div
                 className="menubox__button"
-                onClick={() => setLinksShown(!linksShown)}
+                onClick={() => setLinksShown(linksShown ? false : true)}
             >
                 <MenuIcon className="menubox__icon" />
             </div>
@@ -25,7 +25,6 @@ const MenuBox = () => {
                 className={`menubox__links ${
                     linksShown ? 'menubox__links--active' : ''
                 }`}
-                ref={ref}
             >
                 <div onClick={() => setLinksShown(false)}>
                     <LinkItem href="/about" name="About" />

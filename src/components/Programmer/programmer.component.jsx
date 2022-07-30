@@ -4,6 +4,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 import { loadGLTFModel } from '../../lib/model';
+import Spinner from '../Spinner/spinner.component';
 
 function easeOutCirc(x) {
     return Math.sqrt(1 - Math.pow(x - 1, 4));
@@ -121,10 +122,13 @@ const MeAndDog = () => {
                 background: 'transparent',
                 height: '40rem',
                 width: '40rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
             }}
             title="Owner of 3D object: Jan Bláha, from Link: https://sketchfab.com/3d-models/programmer-153d901c16494fd8bc5d376c39a1fa44"
         >
-            {loading && <p>Loading</p>}
+            {loading && <Spinner />}
         </div>
     );
 };

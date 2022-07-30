@@ -94,6 +94,7 @@
         height: 25.2rem;
 
         @media (max-width: 420px) {
+            height: 23rem;
             column-gap: 5rem;
             row-gap: 0.7rem;
         }
