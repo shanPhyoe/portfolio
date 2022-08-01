@@ -22,7 +22,6 @@
         left: 5rem;
         display: flex;
         align-items: center;
-        gap: 1rem;
         transition: color 0.3s;
 
         @media (max-width: 520px) {
@@ -31,11 +30,6 @@
 
         @media (max-width: 420px) {
             left: 1.5rem;
-        }
-
-        & > span {
-            color: var(--color-header);
-            font-weight: 800;
         }
 
         &:hover {

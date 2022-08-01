@@ -1,6 +1,6 @@
 :root {
-    --font-family-heading: 'M PLUS 1', sans-serif;
-    --font-family-body: 'Lora', serif;
+    --font-family-heading: 'Open Sans', sans-serif;
+    --font-family-body: 'Lato', sans-serif;
 
     --slideshow-: ;
 }
@@ -77,45 +77,42 @@ h1,
 h2,
 h3 {
     font-family: var(--font-family-heading);
+    font-weight: 700;
     color: var(--color-header);
 }
 
 h1 {
     font-size: 4.8rem;
-    font-weight: 800;
 
     @media (max-width: 520px) {
         font-size: 3.8rem;
     }
 
-    @media (max-width: 390px) {
+    @media (max-width: 410px) {
         font-size: 3rem;
     }
 }
 
 h2 {
     font-size: 3.3rem;
-    font-weight: 800;
 
     @media (max-width: 520px) {
         font-size: 2.6rem;
     }
 
-    @media (max-width: 390px) {
+    @media (max-width: 410px) {
         font-size: 2.4rem;
     }
 }
 
 h3 {
     font-size: 1.9rem;
-    font-weight: 700;
-    border-bottom: 3px solid var(--color-text-alt);
     transition: border-color 0.3s;
     width: fit-content;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     user-select: none;
 
     &:hover {
-        border-color: var(--color-primary);
+        color: var(--color-primary);
     }
 }

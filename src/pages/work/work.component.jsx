@@ -36,6 +36,7 @@ const Work = () => {
                 stack="React, Redux, Firebase, Node.js, Stripe"
                 websiteLink="https://ryus-greeneries.netlify.app"
                 gitRepoLink="https://github.com/shanPhyoe/ryu-s-greeneries"
+                revOrder={true}
             />
             <Project
                 title="Fx-Tetra"
@@ -46,12 +47,13 @@ const Work = () => {
                 gitRepoLink="https://github.com/shanPhyoe/fxTetra"
             />
             <Project
-                title="GOLDFLOW"
+                title="Goldflow"
                 imagePath="/images/goldflow.png"
                 description="An expense tracker app that will record and calculate all the statistics for incomes, expenses, and investments data by monthly, yearly, and lifetime. It is a full stack app where the user must create an account, which is quite simple and easy, to secure all user data."
                 stack="React, Redux, Chart.js, Node.js, Express, JWT"
                 websiteLink="https://goldflow.herokuapp.com"
                 gitRepoLink="https://github.com/shanPhyoe/goldflow"
+                revOrder={true}
             />
         </motion.div>
     );

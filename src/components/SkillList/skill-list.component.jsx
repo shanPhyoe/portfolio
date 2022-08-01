@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-import { ReactComponent as DogPaw } from '../../assets/icons/dog-paw.svg';
+import { ReactComponent as Bolt } from '../../assets/icons/bolt.svg';
 
 import './skill-list.styles.scss';
 
@@ -23,7 +23,7 @@ const SkillList = ({ name }) => {
                     isHovering ? 'skill-list__image--active' : ''
                 }`}
             >
-                <DogPaw className="skill-list__icon" />
+                <Bolt className="skill-list__icon" />
             </div>
             <span>{name}</span>
         </div>

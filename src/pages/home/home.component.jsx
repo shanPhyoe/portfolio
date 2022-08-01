@@ -1,8 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import ImageSlideshow from '../../components/ImageSlideshow/image-sildeshow.component';
-import SkillList from '../../components/SkillList/skill-list.component';
+import Programmer from '../../components/Programmer/programmer.component';
 
 import './home.styles.scss';
 
@@ -22,30 +21,13 @@ export default function Home() {
             variants={variants}
             transition={{ duration: 0.4, type: 'easeInOut' }}
         >
-            <div className="home__slideshow">
-                <ImageSlideshow />
-            </div>
             <div className="home__header-textbox">
                 <span>Hello, my name is</span>
-                <h1>Ye Wai Shan Phyoe,</h1>
-                <h2>a Web Developer.</h2>
+                <h1>Ye Wai Shan Phyoe.</h1>
+                <h2>I am a Web Developer</h2>
             </div>
-            <div className="home__skills">
-                <h3>Skills</h3>
-                <div className="home__skills-content">
-                    <SkillList name="HTML" />
-                    <SkillList name="CSS" />
-                    <SkillList name="Sass" />
-                    <SkillList name="JavaScript" />
-                    <SkillList name="React" />
-                    <SkillList name="Redux" />
-                    <SkillList name="Next" />
-                    <SkillList name="Node" />
-                    <SkillList name="Express" />
-                    <SkillList name="MongoDB" />
-                    <SkillList name="Firebase" />
-                    <SkillList name="Figma" />
-                </div>
+            <div className="home__programmer">
+                <Programmer />
             </div>
         </motion.div>
     );

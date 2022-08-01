@@ -55,7 +55,7 @@ const Contact = () => {
                     rel="noopenner noreferrer"
                 >
                     <LinkedIn className="contact__icon" />
-                    <span>Shan Phyoe</span>
+                    <span>Ye Wai Shan Phyoe</span>
                 </a>
                 <a className="contact__item" href="tel:+959445185009">
                     <Phone className="contact__icon" />

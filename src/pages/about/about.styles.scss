@@ -12,31 +12,29 @@
 
 .about {
     margin: 10rem auto;
-    display: flex;
-    gap: 4rem;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 42rem 42rem;
+    column-gap: 6rem;
+    grid-template-areas:
+        'about skill'
+        'love .';
 
-    @media (max-width: 900px) {
+    @media (max-width: 960px) {
+        display: flex;
         flex-direction: column;
-    }
-
-    &__content {
-        width: 40rem;
-
-        @media (max-width: 900px) {
-            order: 2;
-        }
-
-        @media (max-width: 500px) {
-            width: 80%;
-            padding: 0 2rem;
-        }
+        gap: 6rem;
+        margin: 8rem auto;
+        width: 80%;
     }
 
     &__about {
         text-align: justify;
         margin-bottom: 6rem;
+        grid-area: about;
+
+        @media (max-width: 960px) {
+            margin-bottom: 0;
+        }
 
         & > p {
             font-size: 1.6rem;
@@ -55,6 +53,11 @@
 
     &__love {
         font-size: 1.6rem;
+        grid-area: love;
+
+        @media (max-width: 960px) {
+            order: 3;
+        }
     }
 
     &__love-header {
@@ -67,13 +70,39 @@
         }
     }
 
-    &__programmer {
-        width: 40rem;
-        height: 40rem;
-        position: relative;
+    // &__programmer {
+    //     width: 40rem;
+    //     height: 40rem;
+    //     position: relative;
 
-        @media (max-width: 768px) {
-            order: 1;
+    //     @media (max-width: 768px) {
+    //         order: 1;
+    //     }
+    // }
+
+    &__skills {
+        width: 40rem;
+        grid-area: skill;
+
+        @media (max-width: 960px) {
+            order: 2;
+            width: 80%;
+        }
+    }
+
+    &__skills-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1.2rem;
+        column-gap: 7rem;
+        height: 25.2rem;
+
+        @media (max-width: 420px) {
+            height: 23rem;
+            column-gap: 4rem;
+            row-gap: 0.7rem;
         }
     }
 }

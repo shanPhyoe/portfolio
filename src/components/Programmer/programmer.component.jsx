@@ -10,7 +10,7 @@ function easeOutCirc(x) {
     return Math.sqrt(1 - Math.pow(x - 1, 4));
 }
 
-const MeAndDog = () => {
+const Programmer = () => {
     const refContainer = useRef();
     const [loading, setLoading] = useState(true);
     const [renderer, setRenderer] = useState();
@@ -138,4 +138,4 @@ const MeAndDog = () => {
     );
 };
 
-export default MeAndDog;
+export default Programmer;

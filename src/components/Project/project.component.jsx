@@ -9,12 +9,13 @@ const Project = ({
     stack,
     websiteLink,
     gitRepoLink,
+    revOrder,
 }) => {
     return (
-        <div className="project">
-            <div className="project__image">
+        <div className={`project ${revOrder ? 'project--rev' : ''}`}>
+            <a href={websiteLink} className="project__image">
                 <img src={imagePath} alt={title} />
-            </div>
+            </a>
             <div className="project__content">
                 <h3>{title}</h3>
                 <p>{description}</p>
