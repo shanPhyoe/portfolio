@@ -33,7 +33,7 @@ const About = () => {
                         build responsive websites.
                     </p>
                     <p>
-                        Persistent in the problem-solving, quick learner, and a
+                        A persistent problem solver, quick learner, and
                         well-organized person with careful attention to detail
                         and web responsiveness.
                     </p>
