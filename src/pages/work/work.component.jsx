@@ -24,7 +24,7 @@ const Work = () => {
             <Project
                 title="Hotel Alucia"
                 imagePath="/images/hotel alucia work.png"
-                description="A landing page for a luxury hotel in Bali. It showcases several sections of available services like restaurants and bars, rooms and suites and other minor facilities, pools, spa, etc."
+                description="A landing page for a luxury hotel in Bali. It showcases several sections of available services like restaurants and bars, rooms and suites, other minor facilities, pools, spas, etc."
                 stack="HTML, CSS, Javascript"
                 websiteLink="https://hotel-alucia.netlify.app"
                 gitRepoLink="https://github.com/shanPhyoe/alucia-hotel"
@@ -32,7 +32,7 @@ const Work = () => {
             <Project
                 title={`Ryu's Greeneries Shop`}
                 imagePath="/images/ryus greeneries work.png"
-                description="Ryu’s greeneries is an e-commerce website where plenty of houseplants under different categories are sold. It features shopping cart, plants search, payment and user registration, etc. It is also backed by a server for secure payment process."
+                description="Ryu’s greeneries is an e-commerce website where plenty of houseplants with different categories are sold. It features a shopping cart, plant search, payment, user registration, etc. It is also backed by a server for a secure payment process."
                 stack="React, Redux, Firebase, Node.js, Stripe"
                 websiteLink="https://ryus-greeneries.netlify.app"
                 gitRepoLink="https://github.com/shanPhyoe/ryu-s-greeneries"
@@ -40,7 +40,7 @@ const Work = () => {
             <Project
                 title="Fx-Tetra"
                 imagePath="/images/fx-tetra.png"
-                description="At Fx-Tetra, one can easily search forex currency pair by currency base, quote or symbol. Also, it features in a way that you can quickly visualize your tailored data within 15 years with candlestick charts in few seconds."
+                description="At Fx-Tetra, one can easily search forex currency pairs by currency base, quote, or symbol. Also, it features a way that you can quickly visualize your tailored data within 15 years with candlestick charts in a few seconds."
                 stack="Next, LightweightCharts.js, TraderMade API, TwelveData API"
                 websiteLink="https://fx-tetra.vercel.app/"
                 gitRepoLink="https://github.com/shanPhyoe/fxTetra"
@@ -48,7 +48,7 @@ const Work = () => {
             <Project
                 title="GOLDFLOW"
                 imagePath="/images/goldflow.png"
-                description="An expense tracker app that will record and calculate all the statistics for incomes, expenses and investments data by monthly, yearly and lifetime. A full stack app that user must create an account, which is quite simple and easy, to secure all user data."
+                description="An expense tracker app that will record and calculate all the statistics for incomes, expenses, and investments data by monthly, yearly, and lifetime. It is a full stack app where the user must create an account, which is quite simple and easy, to secure all user data."
                 stack="React, Redux, Chart.js, Node.js, Express, JWT"
                 websiteLink="https://goldflow.herokuapp.com"
                 gitRepoLink="https://github.com/shanPhyoe/goldflow"

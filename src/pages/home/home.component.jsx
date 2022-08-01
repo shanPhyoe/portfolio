@@ -36,7 +36,7 @@ export default function Home() {
                     <SkillList name="HTML" />
                     <SkillList name="CSS" />
                     <SkillList name="Sass" />
-                    <SkillList name="Javascript" />
+                    <SkillList name="JavaScript" />
                     <SkillList name="React" />
                     <SkillList name="Redux" />
                     <SkillList name="Next" />

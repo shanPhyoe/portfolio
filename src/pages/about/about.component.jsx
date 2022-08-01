@@ -28,14 +28,15 @@ const About = () => {
                     <div className="about__about">
                         <h3>About</h3>
                         <p>
-                            I am a passionate full stack developer located in
-                            Myanmar. I have a serious passion for creating
-                            animations, web responsiveness and UI effects.
+                            I am a flexible team worker passionate about
+                            everything related to web development. As a
+                            user-friendly developer, I carefully consider user
+                            experience and build responsive websites.
                         </p>
                         <p>
-                            Persistent problem solver, quick learner and
-                            well-organised person with high attention to details
-                            and web responsiveness.
+                            Persistent in the problem-solving, quick learner,
+                            and a well-organized person with careful attention
+                            to detail and web responsiveness.
                         </p>
                     </div>
                     <div className="about__love">

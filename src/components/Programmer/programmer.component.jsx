@@ -18,6 +18,7 @@ const MeAndDog = () => {
     const [target] = useState(new THREE.Vector3(-0.7, 1.2, 0));
     const [initialCameraPosition] = useState(new THREE.Vector3(0, 0, 0));
     const [scene] = useState(new THREE.Scene());
+    const [clock] = useState(new THREE.Clock());
     const [_controls, setControls] = useState();
 
     const handleWindowResize = useCallback(() => {
@@ -69,7 +70,9 @@ const MeAndDog = () => {
             controls.target = target;
             setControls(controls);
 
-            loadGLTFModel(scene, '/programmer.glb', {
+            let mixers = [];
+
+            loadGLTFModel(scene, mixers, '/programmer.glb', {
                 receiveShadow: true,
                 castShadow: true,
             }).then(() => {
@@ -81,6 +84,10 @@ const MeAndDog = () => {
             let frame = 0;
             const animate = () => {
                 req = requestAnimationFrame(animate);
+
+                const delta = clock.getDelta();
+
+                for (const mixer of mixers) mixer.update(delta);
 
                 frame = frame <= 100 ? frame + 1 : frame;
 

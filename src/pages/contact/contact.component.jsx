@@ -27,10 +27,10 @@ const Contact = () => {
             <div className="contact">
                 <h3>Contact</h3>
                 <p>
-                    I&#39;m interested in job opportunities and I would like to
-                    hear from you. Also, if you have any questions or just want
-                    to say hi, please ring my bells, and I will get back to you
-                    as soon as possible.
+                    I'm interested in job opportunities and would like to hear
+                    from you. Also, if you have any questions or want to say hi,
+                    please ring my bells, and I will get back to you as soon as
+                    possible.
                 </p>
                 <a
                     className="contact__item"
