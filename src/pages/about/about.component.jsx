@@ -28,7 +28,7 @@ const About = () => {
                     <h3>About Me</h3>
                     <p>
                         I am a flexible team worker passionate about everything
-                        related to web development. As a user-friendly
+                        related to web development. Being user-friendly
                         developer, I carefully consider user experience and
                         build responsive websites.
                     </p>
