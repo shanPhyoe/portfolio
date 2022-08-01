@@ -58,6 +58,7 @@
     &__links {
         display: flex;
         padding-top: 0.3rem;
+        gap: 2rem;
 
         @media (max-width: 720px) {
             display: none;
