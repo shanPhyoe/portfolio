@@ -23,7 +23,7 @@ const Work = () => {
         >
             <Project
                 title="Hotel Alucia"
-                imagePath="/images/hotel alucia work.png"
+                imagePath="/images/hotel alucia.png"
                 description="A landing page for a luxury hotel in Bali. It showcases several sections of available services like restaurants and bars, rooms and suites, other minor facilities, pools, spas, etc."
                 stack="HTML, CSS, Javascript"
                 websiteLink="https://hotel-alucia.netlify.app"
@@ -31,7 +31,7 @@ const Work = () => {
             />
             <Project
                 title={`Ryu's Greeneries Shop`}
-                imagePath="/images/ryus greeneries work.png"
+                imagePath="/images/ryus greeneries.png"
                 description="Ryu’s greeneries is an e-commerce website where plenty of houseplants with different categories are sold. It features a shopping cart, plant search, payment, user registration, etc. It is also backed by a server for a secure payment process."
                 stack="React, Redux, Firebase, Node.js, Stripe"
                 websiteLink="https://ryus-greeneries.netlify.app"
